@@ -4,412 +4,229 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#f5f4ee">
-  <title>Runzhuo Du · Biomedical Engineering</title>
-  <meta name="description" content="Runzhuo Du, undergraduate in Biomedical Engineering at ShanghaiTech University. Research interests: breast cancer screening and medical image analysis.">
+  <meta name="theme-color" content="#000000">
+  <title>Runzhuo Du | ShanghaiTech University</title>
+  <meta name="description" content="Runzhuo Du, a Biomedical Engineering undergraduate at ShanghaiTech University, graduating in 2028. Research interests: breast cancer screening and medical image analysis.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Runzhuo Du · Biomedical Engineering">
-  <meta property="og:description" content="Undergraduate at ShanghaiTech University. Breast cancer screening & medical image analysis.">
+  <meta property="og:title" content="Runzhuo Du | ShanghaiTech University">
+  <meta property="og:description" content="Biomedical Engineering undergraduate · Expected graduation: 2028. Breast cancer screening and medical image analysis.">
   <meta property="og:url" content="https://maaaark-creator.github.io/">
+  <meta property="og:image" content="https://maaaark-creator.github.io/assets/avatar.png">
+  <meta property="og:image:width" content="460">
+  <meta property="og:image:height" content="460">
+  <meta property="og:image:alt" content="Illustrated avatar of an astronaut riding a rocket against a blue sky">
   <link rel="canonical" href="https://maaaark-creator.github.io/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232c4b40'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='45' fill='%23f5f4ee'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="assets/avatar.png">
   <style>
     :root {
-      --paper: #f5f4ee;
-      --ink: #262f2b;
-      --muted: #656e65;
-      --green: #2c4b40;
-      --line: #d9ddd3;
-      --soft: #e9ede3;
-      --serif: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", SimSun, serif;
-      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      --text: #171717;
+      --heading: #242e3b;
+      --muted: #526075;
+      --blue: #315fb3;
+      --line: #d6dfed;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
     }
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 105px; }
-    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
-    a { color: inherit; text-decoration: none; }
-    button { color: inherit; font: inherit; }
-    a, button { -webkit-tap-highlight-color: transparent; }
-    a:focus-visible, button:focus-visible { outline: 3px solid #718f59; outline-offset: 6px; border-radius: 4px; }
-    ::selection { color: var(--paper); background: var(--green); }
-    .container { width: min(1120px, calc(100% - 112px)); margin-inline: auto; }
-    .skip-link { position: fixed; top: 12px; left: 12px; z-index: 20; padding: 12px 18px; background: var(--green); color: white; transform: translateY(-160%); }
+    html { scroll-behavior: smooth; scroll-padding-top: 30px; }
+    body { margin: 0; color: var(--text); background: #fff; font: 18px/1.75 var(--serif); -webkit-font-smoothing: antialiased; }
+    a { color: var(--blue); text-decoration: none; text-underline-offset: 4px; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 3px solid #7398df; outline-offset: 5px; border-radius: 2px; }
+    ::selection { background: #dbe8ff; color: #172b4f; }
+    .container { width: min(1040px, calc(100% - 64px)); margin-inline: auto; }
+    .skip-link { position: fixed; top: 12px; left: 12px; z-index: 10; padding: 8px 16px; color: #fff; background: var(--blue); font: 14px/1.6 var(--sans); transform: translateY(-180%); }
     .skip-link:focus { transform: translateY(0); }
-    .icon { display: inline-block; width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
-    .symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
-    .site-header { position: relative; z-index: 5; }
-    .header-inner { min-height: 104px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
-    .brand { display: inline-flex; align-items: baseline; gap: 12px; }
-    .brand-mark { font-family: var(--serif); font-size: 35px; font-style: italic; line-height: 1; }
-    .brand-name { font-size: 11px; font-weight: 600; letter-spacing: .14em; }
-    .nav { display: flex; align-items: center; gap: 34px; font-size: 13px; }
-    .nav a { position: relative; padding-block: 12px; }
-    .nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 3px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
-    .nav a:hover::after, .nav a[aria-current="location"]::after { transform: scaleX(1); }
-    .nav .nav-github { display: inline-flex; align-items: center; gap: 8px; padding: 10px 17px; border: 1px solid var(--line); border-radius: 99px; }
-    .nav-github .icon { width: 15px; height: 15px; }
-    .nav .nav-github::after { display: none; }
-    .nav-github:hover { background: var(--soft); }
-    .menu-button { display: none; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
-    .hero { display: grid; grid-template-columns: 1.3fr 1fr; align-items: center; gap: 70px; padding-block: 88px 96px; }
-    .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 28px; color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: .2em; line-height: 1.7; text-transform: uppercase; }
-    .dot { width: 6px; height: 6px; border-radius: 50%; background: #7e925c; flex-shrink: 0; }
-    h1 { margin: 0; font-family: var(--serif); font-size: clamp(60px, 6.7vw, 88px); font-weight: 400; line-height: 1.04; letter-spacing: -.055em; }
-    h1 span { display: block; }
-    h1 .surname { color: var(--green); font-style: italic; margin-top: 3px; }
-    .hero-subtitle { margin: 28px 0 0; font-size: 15px; line-height: 1.8; }
-    .hero-subtitle span { color: var(--muted); }
-    .hero-description { max-width: 385px; margin: 15px 0 0; color: var(--muted); font-size: 14px; line-height: 2; }
-    .hero-actions { display: flex; align-items: center; gap: 27px; margin-top: 32px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; gap: 24px; min-height: 48px; padding: 0 21px; border: 1px solid var(--green); border-radius: 4px; background: var(--green); color: #fff; font-size: 13px; transition: background .2s, transform .2s; }
-    .button:hover { background: #1e382e; transform: translateY(-2px); }
-    .text-link { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; }
-    .text-link:hover { text-decoration: underline; text-underline-offset: 5px; }
-    .text-link .icon { width: 16px; height: 16px; }
-    .portrait { position: relative; aspect-ratio: 1 / 1.14; max-width: 396px; width: 100%; justify-self: end; padding: 27px; overflow: hidden; color: #f2f2df; background: var(--green); border-radius: 190px 190px 8px 8px; }
-    .portrait-grid { position: absolute; inset: 0; background-image: linear-gradient(#dce7cc09 1px, transparent 1px), linear-gradient(90deg, #dce7cc09 1px, transparent 1px); background-size: 39px 39px; }
-    .portrait-orbit { position: absolute; width: 255px; height: 255px; border: 1px solid #b9c8ac44; border-radius: 50%; top: 67px; left: 50%; transform: translateX(-50%); }
-    .portrait-orbit::before { content: ""; position: absolute; inset: 18px; border: 1px solid #b9c8ac22; border-radius: 50%; }
-    .portrait-orbit::after { content: ""; width: 11px; height: 11px; border-radius: 50%; background: #ced6ad; position: absolute; right: 23px; top: 35px; box-shadow: 0 0 0 7px #d9e3bc0c; }
-    .monogram { position: absolute; inset: 0 0 12px; display: flex; justify-content: center; align-items: center; color: #e0e5c9; font-family: var(--serif); font-size: clamp(114px, 12vw, 166px); font-style: italic; letter-spacing: -.09em; padding-right: 15px; }
-    .portrait-star { position: absolute; top: 43px; left: 50%; font-size: 25px; transform: translateX(-50%); color: #bdcda7; }
-    .portrait-caption { position: absolute; left: 27px; right: 27px; bottom: 26px; display: flex; align-items: flex-end; justify-content: space-between; border-top: 1px solid #dce7cc33; padding-top: 19px; }
-    .portrait-caption p { margin: 0; font-size: 10px; letter-spacing: .14em; line-height: 1.9; }
-    .portrait-caption span { font-size: 11px; color: #d0dcc4; }
-    .portrait-caption .icon { width: 25px; height: 25px; }
-    .chapter { display: grid; grid-template-columns: 205px 1fr; gap: 50px; padding-block: 57px 62px; border-top: 1px solid var(--line); scroll-margin-top: 20px; }
-    .chapter-label { display: flex; gap: 15px; align-items: baseline; }
-    .chapter-number { font-size: 10px; font-variant-numeric: tabular-nums; color: var(--muted); }
-    .chapter-title { margin: 0; font-size: 16px; line-height: 1.7; font-weight: 500; letter-spacing: .05em; }
-    .chapter-en { display: block; font-size: 9px; font-weight: 400; color: var(--muted); letter-spacing: .16em; margin-top: 6px; }
-    .about-lead { max-width: 670px; margin: -3px 0 16px; font-family: var(--serif); font-size: 25px; line-height: 1.65; font-weight: 400; letter-spacing: -.025em; }
-    .about-body { max-width: 620px; margin: 0; font-size: 14px; line-height: 2; color: var(--muted); }
-    .about-meta { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 25px; font-size: 11px; color: var(--muted); }
-    .about-meta span, .about-meta a { display: inline-flex; gap: 8px; align-items: center; }
-    .about-meta .icon { width: 15px; height: 15px; }
-    .about-meta a:hover { color: var(--green); }
-    .personal-note { display: flex; flex-wrap: wrap; gap: 9px 18px; margin: 28px 0 0; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); line-height: 1.9; }
-    .personal-note strong { color: var(--green); font-weight: 500; }
-    .research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .research-card { min-height: 146px; padding: 25px 26px; border: 1px solid var(--line); border-radius: 4px; }
-    .research-card .research-label { margin: 0 0 17px; color: var(--muted); font-size: 9px; letter-spacing: .12em; }
-    .research-card h3 { margin: 0; color: var(--green); font-family: var(--serif); font-size: 25px; line-height: 1.3; font-weight: 400; letter-spacing: -.02em; }
-    .research-note { margin: 19px 0 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
-    .projects-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 0 0 25px; }
-    .section-note { margin: 0; font-size: 12px; color: var(--muted); line-height: 1.8; }
-    .projects-heading .text-link { font-size: 11px; flex-shrink: 0; }
-    .project-list { border-top: 1px solid var(--line); }
-    .project { display: grid; grid-template-columns: 37px 1fr 28px; align-items: start; gap: 17px; padding: 27px 0; border-bottom: 1px solid var(--line); transition: padding .2s, background .2s; }
-    .project:hover { padding-inline: 13px; background: #ebeee5; }
-    .project-index { margin-top: 5px; color: var(--muted); font-family: var(--serif); font-size: 14px; font-style: italic; }
-    .project h3 { margin: 0; font-size: 17px; font-weight: 500; line-height: 1.6; }
-    .project p { margin: 7px 0 11px; color: var(--muted); font-size: 12px; line-height: 1.8; }
-    .project-code { display: block; color: var(--muted); font-family: Consolas, monospace; font-size: 10px; line-height: 1.8; overflow-wrap: anywhere; }
-    .project-tags { display: flex; align-items: center; gap: 12px; margin-top: 13px; }
-    .tag { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 10px; }
-    .language-dot { width: 6px; height: 6px; border-radius: 50%; background: #6d8f77; }
-    .language-dot.html { background: #c38862; }
-    .project-arrow { margin-top: 3px; width: 23px; height: 23px; transition: transform .2s; }
-    .project:hover .project-arrow { transform: translate(3px, -3px); }
-    .contact { padding-bottom: 70px; }
-    .contact-panel { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 34px 36px; border: 1px solid #d1d9c9; border-radius: 5px; background: var(--soft); }
-    .contact-panel h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 27px; font-weight: 400; letter-spacing: -.025em; }
-    .contact-panel p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
-    .contact-email { display: inline-block; margin-top: 12px; color: var(--green); font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
-    .contact-email:hover { text-decoration: underline; text-underline-offset: 4px; }
-    .contact-github { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; color: var(--muted); font-size: 11px; }
-    .contact-github:hover { color: var(--green); }
-    .contact-github .icon { width: 14px; height: 14px; }
-    .contact-link { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 49px; height: 49px; border: 1px solid #bdc9b6; border-radius: 50%; transition: background .2s, color .2s; }
-    .contact-link:hover { color: white; background: var(--green); border-color: var(--green); }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; min-height: 92px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; line-height: 1.7; }
+    .site-header { color: #fff; background: #000; font-family: var(--sans); }
+    .header-inner { max-width: 1500px; min-height: 88px; margin-inline: auto; padding: 16px 30px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .brand { color: #719bea; font-size: 19px; font-weight: 700; letter-spacing: .01em; white-space: nowrap; }
+    .brand:hover { color: #9ebcf4; text-decoration: none; }
+    .navigation { display: flex; align-items: center; flex-wrap: wrap; gap: 30px; }
+    .navigation a { padding-block: 8px; color: #fff; font-size: 11px; font-weight: 750; line-height: 1.4; letter-spacing: .095em; text-transform: uppercase; }
+    .navigation a:hover, .navigation a[aria-current="location"] { color: #a8c6ff; text-decoration: none; }
+    .masthead { padding: 37px 0 47px; text-align: center; }
+    .masthead h1 { margin: 0; color: #000; font: 750 clamp(48px, 5.5vw, 76px)/1.2 var(--sans); letter-spacing: -.035em; }
+    .masthead-rule { width: 95px; height: 4px; margin: 18px auto 13px; border: 0; border-radius: 2px; background: #858585; }
+    .masthead p { margin: 0; color: #171717; font: 300 24px/1.6 var(--sans); }
+    .profile { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 44px; align-items: start; padding-block: 4px 30px; border-bottom: 1px solid var(--line); }
+    .avatar { display: block; width: 220px; height: 220px; object-fit: contain; border: 1px solid #d5dfef; border-radius: 5px; box-shadow: 0 9px 25px #17345912; }
+    .profile-details { padding-top: 7px; }
+    .profile-details h2 { margin: 0 0 11px; color: var(--heading); font: 750 32px/1.25 var(--sans); letter-spacing: -.015em; }
+    .affiliation { margin: 0; color: #394354; font-size: 17px; line-height: 1.75; }
+    .graduation { color: var(--muted); }
+    .profile-contact { margin: 19px 0 0; color: #394354; font-size: 16px; line-height: 1.8; }
+    .profile-contact a { overflow-wrap: anywhere; }
+    .profile-links { display: flex; flex-wrap: wrap; gap: 21px; margin: 10px 0 0; font-size: 16px; font-weight: 700; }
+    .biography { padding-top: 30px; }
+    .biography p { margin: 0 0 16px; }
+    .content-section { margin-top: 36px; scroll-margin-top: 28px; }
+    .section-title { margin: 0 0 17px; padding-bottom: 7px; border-bottom: 1px solid var(--line); color: var(--heading); font: 750 25px/1.4 var(--sans); letter-spacing: -.015em; }
+    .research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+    .research-item { padding: 0 0 0 15px; border-left: 3px solid #416fb8; }
+    .research-item h3 { margin: 0 0 5px; color: var(--heading); font-size: 18px; line-height: 1.55; font-weight: 700; }
+    .research-item p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 17px; padding-bottom: 7px; border-bottom: 1px solid var(--line); }
+    .section-heading .section-title { margin: 0; padding: 0; border: 0; }
+    .all-projects { flex-shrink: 0; font-size: 14px; }
+    .project-list { margin: 0; padding-left: 22px; }
+    .project-list li { padding-left: 5px; margin-bottom: 19px; }
+    .project-list li::marker { color: var(--muted); font-size: 13px; }
+    .project-title { font-size: 18px; font-weight: 700; }
+    .project-description { margin: 3px 0 0; color: #3e495a; font-size: 16px; line-height: 1.7; }
+    .project-meta { margin-left: 10px; color: #617084; font: 11px/1.6 var(--sans); white-space: nowrap; }
+    .plain-paragraph { margin: 0; }
+    .interests { color: #394354; }
+    .interests strong { color: var(--heading); }
+    .site-footer { margin-top: 48px; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 23px 27px; color: #667184; font: 12px/1.7 var(--sans); }
     .footer-inner p { margin: 0; }
-    .footer-right { display: flex; align-items: center; gap: 22px; }
-    .back-top { display: inline-flex; align-items: center; gap: 7px; }
-    .back-top .icon { width: 14px; height: 14px; transform: rotate(-90deg); }
-    @media (min-width: 1440px) { .hero { padding-block: 100px 112px; } }
-    @media (max-width: 1000px) {
-      .container { width: calc(100% - 72px); }
-      .hero { gap: 42px; }
-      .portrait { aspect-ratio: 1 / 1.23; }
-      .portrait-orbit { width: 215px; height: 215px; }
-      .chapter { grid-template-columns: 155px 1fr; gap: 30px; }
-      .brand-name { font-size: 10px; }
-      .nav { gap: 24px; }
+    .footer-inner a { color: #526075; }
+    @media (max-width: 850px) {
+      .header-inner { gap: 24px; padding-inline: 24px; }
+      .navigation { gap: 21px; }
+      .navigation a { font-size: 10px; }
+      .masthead { padding-top: 35px; }
+      .masthead p { font-size: 20px; }
+      .profile { gap: 32px; grid-template-columns: 190px minmax(0, 1fr); }
+      .avatar { width: 190px; height: 190px; }
+      .profile-details { padding-top: 0; }
+      .profile-details h2 { font-size: 29px; }
+      .affiliation { font-size: 16px; }
+      .profile-contact { margin-top: 14px; font-size: 15px; }
+      .profile-links { margin-top: 7px; font-size: 15px; }
     }
-    @media (max-width: 720px) {
-      html { scroll-padding-top: 25px; }
+    @media (max-width: 600px) {
+      body { font-size: 16px; line-height: 1.8; }
       .container { width: calc(100% - 40px); }
-      .header-inner { min-height: 80px; }
-      .brand-name { font-size: 9px; letter-spacing: .1em; }
-      .brand-mark { font-size: 32px; }
-      .nav { gap: 20px; font-size: 12px; }
-      .nav .nav-github { display: none; }
-      .hero { gap: 30px; padding-block: 55px 60px; }
-      h1 { font-size: clamp(45px, 8vw, 62px); }
-      .eyebrow { font-size: 8px; margin-bottom: 22px; letter-spacing: .13em; }
-      .hero-subtitle { margin-top: 21px; font-size: 12px; }
-      .hero-description { font-size: 12px; }
-      .hero-actions { gap: 18px; flex-wrap: wrap; margin-top: 25px; }
-      .hero-actions .button { min-height: 43px; padding-inline: 15px; gap: 12px; font-size: 12px; }
-      .hero-actions .text-link { font-size: 12px; }
-      .portrait { padding: 17px; aspect-ratio: 1 / 1.3; }
-      .portrait-orbit { width: 160px; height: 160px; top: 65px; }
-      .monogram { font-size: 100px; }
-      .portrait-caption { left: 17px; right: 17px; bottom: 18px; padding-top: 12px; }
-      .portrait-caption p { font-size: 7px; letter-spacing: .08em; }
-      .portrait-caption span { font-size: 8px; }
-      .portrait-caption .icon { display: none; }
-      .portrait-star { top: 34px; font-size: 19px; }
-      .chapter { grid-template-columns: 1fr; gap: 28px; padding-block: 38px 43px; }
-      .chapter-label { gap: 12px; }
-      .chapter-title { display: flex; align-items: baseline; gap: 14px; }
-      .chapter-en { display: inline; margin: 0; }
-      .about-lead { font-size: 23px; }
-      .about-body { font-size: 13px; }
-      .research-card { padding: 23px 20px; }
-      .research-card h3 { font-size: 23px; }
-      .about-meta { font-size: 10px; gap: 12px 22px; }
-      .contact { padding-bottom: 45px; }
-      .contact-panel { padding: 27px 24px; }
-      .contact-panel h3 { font-size: 24px; }
-      .footer-inner { min-height: 90px; font-size: 9px; }
-      .footer-right { gap: 15px; }
-    }
-    @media (max-width: 480px) {
-      .menu-button { display: inline-flex; }
-      .nav { display: none; position: absolute; top: 68px; left: 20px; right: 20px; padding: 18px 22px; border: 1px solid var(--line); border-radius: 5px; box-shadow: 0 12px 28px #233b3010; background: var(--paper); justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-      .nav[data-open="true"] { display: flex; }
-      .hero { grid-template-columns: 1fr; gap: 42px; padding-top: 47px; }
-      h1 { font-size: 72px; }
-      h1 span { display: block; }
-      .hero-subtitle { font-size: 14px; }
-      .hero-description { font-size: 13px; max-width: 320px; }
-      .eyebrow { font-size: 9px; }
-      .portrait { max-width: none; aspect-ratio: 1.2; border-radius: 160px 160px 6px 6px; }
-      .portrait-orbit { width: 205px; height: 205px; top: 39px; }
-      .monogram { font-size: 132px; bottom: 10px; }
-      .portrait-star { top: 23px; }
-      .portrait-caption { left: 22px; right: 22px; bottom: 22px; }
-      .portrait-caption p { font-size: 9px; }
-      .portrait-caption span { font-size: 10px; }
-      .portrait-caption .icon { display: inline-block; }
-      .project { grid-template-columns: 23px 1fr 22px; gap: 11px; padding-block: 24px; }
-      .project h3 { font-size: 16px; }
-      .projects-heading { align-items: flex-start; gap: 12px; }
-      .projects-heading .text-link { font-size: 10px; }
-      .section-note { font-size: 11px; }
-      .research-grid { grid-template-columns: 1fr; gap: 12px; }
-      .research-card { min-height: 0; padding: 23px; }
-      .research-card .research-label { margin-bottom: 12px; }
-      .contact-panel { gap: 18px; padding: 26px 20px; }
-      .contact-panel h3 { font-size: 23px; }
-      .contact-panel p { font-size: 11px; }
-      .contact-link { width: 43px; height: 43px; }
-      .footer-inner { flex-wrap: wrap; padding-block: 20px; gap: 12px; }
-      .footer-right { width: 100%; justify-content: space-between; }
+      .header-inner { min-height: 0; padding: 17px 20px 15px; flex-direction: column; align-items: flex-start; gap: 11px; }
+      .brand { font-size: 19px; }
+      .navigation { width: 100%; column-gap: 18px; row-gap: 4px; }
+      .navigation a { font-size: 10px; letter-spacing: .07em; padding-block: 5px; }
+      .masthead { padding: 31px 0 34px; }
+      .masthead h1 { font-size: clamp(39px, 9vw, 51px); }
+      .masthead-rule { width: 67px; height: 3px; margin: 14px auto 12px; }
+      .masthead p { max-width: 310px; margin-inline: auto; font-size: 16px; line-height: 1.65; }
+      .profile { grid-template-columns: 1fr; gap: 22px; padding-bottom: 26px; text-align: center; }
+      .avatar { width: 180px; height: 180px; margin-inline: auto; }
+      .profile-details h2 { font-size: 28px; margin-bottom: 10px; }
+      .affiliation { font-size: 16px; }
+      .profile-contact { margin-top: 15px; font-size: 15px; }
+      .profile-links { justify-content: center; font-size: 15px; }
+      .biography { padding-top: 25px; }
+      .content-section { margin-top: 29px; }
+      .section-title { font-size: 22px; }
+      .research-grid { grid-template-columns: 1fr; gap: 20px; }
+      .research-item { padding-left: 13px; }
+      .research-item h3, .project-title { font-size: 17px; }
+      .research-item p, .project-description { font-size: 15px; }
+      .section-heading { gap: 12px; flex-wrap: wrap; margin-bottom: 15px; }
+      .all-projects { font-size: 13px; }
+      .project-list { padding-left: 18px; }
+      .project-list li { padding-left: 3px; margin-bottom: 17px; }
+      .project-meta { font-size: 10px; }
+      .site-footer { margin-top: 35px; }
+      .footer-inner { font-size: 11px; padding-block: 20px; }
     }
     @media (max-width: 360px) {
-      h1 { font-size: 61px; }
-      .brand-name { font-size: 8px; }
-      .portrait-orbit { width: 175px; height: 175px; }
+      .navigation { column-gap: 13px; }
+      .navigation a { font-size: 9px; }
+      .profile-contact { font-size: 14px; }
+      .section-heading { gap: 5px; }
     }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { transition: none !important; animation: none !important; }
-    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
-  <noscript><style>@media(max-width:480px){.menu-button{display:none}.nav{display:flex;position:static;padding:0;border:0;box-shadow:none;gap:10px;font-size:11px}.brand-name{display:none}}</style></noscript>
 </head>
-<body id="top">
+<body id="home">
   <a class="skip-link" href="#main">Skip to content</a>
-  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
-    <symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.3 4.3 0 0 0-.1-3.3s-1.1-.3-3.5 1.3a12 12 0 0 0-6.4 0C6 3.4 4.9 3.7 4.9 3.7a4.3 4.3 0 0 0-.1 3.3 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V22"/></symbol>
-    <symbol id="school" viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Zm4 3v5l5 3 5-3v-5M21 9v7"/></symbol>
-    <symbol id="menu" viewBox="0 0 24 24"><path d="M5 8h14M5 16h14"/></symbol>
-  </svg>
-
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Runzhuo Du, back to top">
-        <span class="brand-mark" aria-hidden="true">R.</span>
-        <span class="brand-name">RUNZHUO DU</span>
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation menu">
-        <svg class="icon" aria-hidden="true"><use href="#menu"/></svg>
-      </button>
-      <nav class="nav" id="navigation" aria-label="Main navigation">
+    <div class="header-inner">
+      <a class="brand" href="#home">Runzhuo Du</a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a class="nav-github" href="https://github.com/maaaark-creator">GitHub <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
       </nav>
     </div>
   </header>
 
-  <main id="main" class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> A small corner of the internet</p>
-        <h1 id="hero-title"><span>Runzhuo</span><span class="surname">Du.</span></h1>
-        <p class="hero-subtitle">Biomedical Engineering<br><span>Undergraduate · ShanghaiTech University</span></p>
-        <p class="hero-description">Interested in breast cancer screening and medical image analysis. Welcome to my little corner of the web.</p>
-        <div class="hero-actions">
-          <a class="button" href="#projects">Explore my work <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
-          <a class="text-link" href="mailto:durzh2024@shanghaitech.edu.cn">Say hello <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-        </div>
+  <main class="container" id="main">
+    <div class="masthead">
+      <h1>Runzhuo Du</h1>
+      <hr class="masthead-rule" aria-hidden="true">
+      <p>Biomedical Engineering · ShanghaiTech University</p>
+    </div>
+
+    <section class="profile" aria-labelledby="profile-name">
+      <img class="avatar" src="assets/avatar.png" width="460" height="460" alt="Illustrated avatar of an astronaut riding a rocket against a blue sky" fetchpriority="high" decoding="async">
+      <div class="profile-details">
+        <h2 id="profile-name">Runzhuo Du</h2>
+        <p class="affiliation">Undergraduate Student<br>Biomedical Engineering<br>ShanghaiTech University<br><span class="graduation">Expected graduation: 2028</span></p>
+        <p class="profile-contact">Email: <a href="mailto:durzh2024@shanghaitech.edu.cn">durzh2024@shanghaitech.edu.cn</a></p>
+        <p class="profile-links"><a href="https://github.com/maaaark-creator">GitHub</a></p>
       </div>
-      <div class="portrait" role="img" aria-label="RD monogram, ShanghaiTech University">
-        <div class="portrait-grid" aria-hidden="true"></div>
-        <div class="portrait-orbit" aria-hidden="true"></div>
-        <span class="portrait-star" aria-hidden="true">✳</span>
-        <span class="monogram" aria-hidden="true">Rd</span>
-        <div class="portrait-caption" aria-hidden="true">
-          <div><p>SHANGHAITECH<br>UNIVERSITY</p><span>maaaark-creator</span></div>
-          <svg class="icon"><use href="#arrow-up-right"/></svg>
+    </section>
+
+    <section class="biography" id="about" aria-label="About me">
+      <p>I am an undergraduate student majoring in Biomedical Engineering at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, with an expected graduation year of 2028. My research interests lie in <strong>breast cancer screening</strong> and <strong>medical image analysis</strong>.</p>
+      <p>You can find a selection of my public projects below, or visit my <a href="https://github.com/maaaark-creator">GitHub</a> for more.</p>
+    </section>
+
+    <section class="content-section" id="research" aria-labelledby="research-title">
+      <h2 class="section-title" id="research-title">Research Interests</h2>
+      <div class="research-grid">
+        <div class="research-item">
+          <h3>Breast Cancer Screening</h3>
+          <p>Screening and early detection of breast cancer.</p>
+        </div>
+        <div class="research-item">
+          <h3>Medical Image Analysis</h3>
+          <p>Computational approaches to understanding medical images.</p>
         </div>
       </div>
     </section>
 
-    <section class="chapter" id="about" aria-labelledby="about-title">
-      <div class="chapter-label">
-        <span class="chapter-number" aria-hidden="true">01</span>
-        <h2 class="chapter-title" id="about-title">About me <span class="chapter-en">A BRIEF INTRODUCTION</span></h2>
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 class="section-title" id="projects-title">Selected Projects</h2>
+        <a class="all-projects" href="https://github.com/maaaark-creator?tab=repositories">All repositories →</a>
       </div>
-      <div>
-        <p class="about-lead">Hi, I'm Runzhuo.<br>A biomedical engineering undergraduate.</p>
-        <p class="about-body">I'm an undergraduate student majoring in Biomedical Engineering at ShanghaiTech University. My research interests lie in breast cancer screening and medical image analysis. This website brings together my interests, public projects, and a little about life beyond academics.</p>
-        <div class="about-meta">
-          <span><svg class="icon" aria-hidden="true"><use href="#school"/></svg>ShanghaiTech University</span>
-          <a href="https://github.com/maaaark-creator"><svg class="icon" aria-hidden="true"><use href="#github"/></svg>@maaaark-creator</a>
-        </div>
-        <p class="personal-note"><strong>Beyond academics</strong><span>Football · Chelsea FC supporter · Stand-up comedy</span></p>
-      </div>
+      <ul class="project-list">
+        <li>
+          <a class="project-title" href="https://github.com/maaaark-creator/simi_hospital">Simulated Hospital</a><span class="project-meta">Python</span>
+          <p class="project-description">A simulated hospital project on surgical consultations.</p>
+        </li>
+        <li>
+          <a class="project-title" href="https://github.com/maaaark-creator/ai-in-medical-imaging-2026-spring">AI in Medical Imaging</a><span class="project-meta">HTML</span>
+          <p class="project-description">ShanghaiTech BME1312 · Spring 2026.</p>
+        </li>
+        <li>
+          <a class="project-title" href="https://github.com/maaaark-creator/Calculus">Calculus</a><span class="project-meta">HTML</span>
+          <p class="project-description">ShanghaiTech Calculus · Autumn 2026.</p>
+        </li>
+      </ul>
     </section>
 
-    <section class="chapter" id="research" aria-labelledby="research-title">
-      <div class="chapter-label">
-        <span class="chapter-number" aria-hidden="true">02</span>
-        <h2 class="chapter-title" id="research-title">Research interests <span class="chapter-en">WHAT I'M DRAWN TO</span></h2>
-      </div>
-      <div>
-        <div class="research-grid">
-          <article class="research-card"><p class="research-label">01 / SCREENING</p><h3>Breast cancer<br>screening</h3></article>
-          <article class="research-card"><p class="research-label">02 / IMAGING</p><h3>Medical image<br>analysis</h3></article>
-        </div>
-        <p class="research-note">These are the areas I'm interested in exploring through biomedical engineering.</p>
-      </div>
+    <section class="content-section" aria-labelledby="interests-title">
+      <h2 class="section-title" id="interests-title">Beyond Research</h2>
+      <p class="plain-paragraph interests">Outside of my studies, I enjoy <strong>football</strong>, support <strong>Chelsea FC</strong>, and like <strong>stand-up comedy</strong>.</p>
     </section>
 
-    <section class="chapter" id="projects" aria-labelledby="projects-title">
-      <div class="chapter-label">
-        <span class="chapter-number" aria-hidden="true">03</span>
-        <h2 class="chapter-title" id="projects-title">Projects & notes <span class="chapter-en">A FEW THINGS I'VE SHARED</span></h2>
-      </div>
-      <div>
-        <div class="projects-heading">
-          <p class="section-note">A selection of my public repositories.</p>
-          <a class="text-link" href="https://github.com/maaaark-creator?tab=repositories">All repositories <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-        </div>
-        <div class="project-list">
-          <a class="project" href="https://github.com/maaaark-creator/simi_hospital">
-            <span class="project-index" aria-hidden="true">01</span>
-            <div>
-              <h3>Simulated Hospital</h3>
-              <p>A simulated hospital project on surgical consultations.</p>
-              <span class="project-code">simi_hospital</span>
-              <div class="project-tags"><span class="tag"><span class="language-dot" aria-hidden="true"></span>Python</span></div>
-            </div>
-            <svg class="icon project-arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
-          </a>
-          <a class="project" href="https://github.com/maaaark-creator/ai-in-medical-imaging-2026-spring">
-            <span class="project-index" aria-hidden="true">02</span>
-            <div>
-              <h3>AI in Medical Imaging</h3>
-              <p>ShanghaiTech BME1312 · 2026 Spring</p>
-              <span class="project-code">ai-in-medical-imaging-2026-spring</span>
-              <div class="project-tags"><span class="tag"><span class="language-dot html" aria-hidden="true"></span>HTML</span></div>
-            </div>
-            <svg class="icon project-arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
-          </a>
-          <a class="project" href="https://github.com/maaaark-creator/Calculus">
-            <span class="project-index" aria-hidden="true">03</span>
-            <div>
-              <h3>Calculus</h3>
-              <p>ShanghaiTech Calculus · 2026 Autumn</p>
-              <span class="project-code">Calculus</span>
-              <div class="project-tags"><span class="tag"><span class="language-dot html" aria-hidden="true"></span>HTML</span></div>
-            </div>
-            <svg class="icon project-arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="chapter contact" id="contact" aria-labelledby="contact-title">
-      <div class="chapter-label">
-        <span class="chapter-number" aria-hidden="true">04</span>
-        <h2 class="chapter-title" id="contact-title">Get in touch <span class="chapter-en">ALWAYS HAPPY TO CONNECT</span></h2>
-      </div>
-      <div>
-        <div class="contact-panel">
-          <div><h3>Let's connect.</h3><p>Have a question or an idea to share? Drop me a line.</p><a class="contact-email" href="mailto:durzh2024@shanghaitech.edu.cn">durzh2024@shanghaitech.edu.cn</a></div>
-          <a class="contact-link" href="mailto:durzh2024@shanghaitech.edu.cn" aria-label="Email Runzhuo Du"><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-        </div>
-        <a class="contact-github" href="https://github.com/maaaark-creator"><svg class="icon" aria-hidden="true"><use href="#github"/></svg>Find me on GitHub <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-      </div>
+    <section class="content-section" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <p class="plain-paragraph">Feel free to get in touch at <a href="mailto:durzh2024@shanghaitech.edu.cn">durzh2024@shanghaitech.edu.cn</a>.</p>
     </section>
   </main>
 
-  <footer class="container">
+  <footer class="site-footer container">
     <div class="footer-inner">
       <p>© <span id="year">2026</span> Runzhuo Du</p>
-      <div class="footer-right"><span>Thanks for stopping by.</span><a class="back-top" href="#top">Back to top <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
   <script>
-    (() => {
-      const menuButton = document.querySelector('.menu-button');
-      const navigation = document.getElementById('navigation');
-      function setMenu(open) {
-        navigation.dataset.open = String(open);
-        menuButton.setAttribute('aria-expanded', String(open));
-        menuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
-      }
-      menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
-      navigation.addEventListener('click', event => {
-        if (event.target.closest('a')) setMenu(false);
-      });
-      document.addEventListener('keydown', event => {
-        if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
-          setMenu(false);
-          menuButton.focus();
-        }
-      });
-      document.addEventListener('click', event => {
-        if (!navigation.contains(event.target) && !menuButton.contains(event.target)) setMenu(false);
-      });
-      const mobileQuery = window.matchMedia('(max-width: 480px)');
-      const closeOnResize = () => setMenu(false);
-      if (mobileQuery.addEventListener) mobileQuery.addEventListener('change', closeOnResize);
-      document.getElementById('year').textContent = String(new Date().getFullYear());
-      if ('IntersectionObserver' in window) {
-        const navLinks = [...navigation.querySelectorAll('a[href^="#"]')];
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            navLinks.forEach(link => {
-              if (link.getAttribute('href') === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
-              else link.removeAttribute('aria-current');
-            });
-          });
-        }, { rootMargin: '-10% 0px -60% 0px' });
-        document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
-      }
-    })();
+    document.getElementById('year').textContent = String(new Date().getFullYear());
   </script>
 </body>
 </html>
