@@ -54,7 +54,8 @@
     .profile-details h2 { margin: 0 0 11px; color: var(--heading); font: 750 32px/1.25 var(--sans); letter-spacing: -.015em; }
     .affiliation { margin: 0; color: #394354; font-size: 17px; line-height: 1.75; }
     .graduation { color: var(--muted); }
-    .profile-contact { margin: 19px 0 0; color: #394354; font-size: 16px; line-height: 1.8; }
+    .profile-advisor { margin: 13px 0 0; color: #394354; font-size: 16px; line-height: 1.8; }
+    .profile-contact { margin: 10px 0 0; color: #394354; font-size: 16px; line-height: 1.8; }
     .profile-contact a { overflow-wrap: anywhere; }
     .profile-links { display: flex; flex-wrap: wrap; gap: 21px; margin: 10px 0 0; font-size: 16px; font-weight: 700; }
     .biography { padding-top: 30px; }
@@ -73,7 +74,22 @@
     .project-list li::marker { color: var(--muted); font-size: 13px; }
     .project-title { font-size: 18px; font-weight: 700; }
     .project-description { margin: 3px 0 0; color: #3e495a; font-size: 16px; line-height: 1.7; }
-    .project-meta { margin-left: 10px; color: #617084; font: 11px/1.6 var(--sans); white-space: nowrap; }
+    .featured-project { margin-bottom: 26px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
+    .featured-project h3 { margin: 0 0 8px; color: var(--heading); font-size: 20px; line-height: 1.55; }
+    .project-award { margin: 0 0 10px; color: var(--muted); font-size: 16px; line-height: 1.75; }
+    .project-award strong { color: var(--blue); }
+    .project-summary { margin: 0; font-size: 16px; line-height: 1.8; }
+    .project-figure { margin: 20px 0 0; }
+    .workflow-link { display: block; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+    .workflow-link:hover { border-color: #7c9bce; }
+    .workflow-image { display: block; width: 100%; height: auto; }
+    .project-figure figcaption { margin-top: 9px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .figure-fullsize { display: inline-block; margin-top: 5px; }
+    .service-list { margin: 0; padding-left: 22px; }
+    .service-list li { margin-bottom: 13px; padding-left: 5px; }
+    .service-list strong { color: var(--heading); font-size: 17px; }
+    .service-detail { display: block; color: var(--muted); font-size: 16px; }
+    .opportunity-note { margin: 0 0 15px; padding-left: 15px; border-left: 3px solid #416fb8; }
     .plain-paragraph { margin: 0; }
     .interests { color: #394354; }
     .interests strong { color: var(--heading); }
@@ -92,7 +108,8 @@
       .profile-details { padding-top: 0; }
       .profile-details h2 { font-size: 29px; }
       .affiliation { font-size: 16px; }
-      .profile-contact { margin-top: 14px; font-size: 15px; }
+      .profile-advisor { font-size: 15px; }
+      .profile-contact { font-size: 15px; }
       .profile-links { margin-top: 7px; font-size: 15px; }
     }
     @media (max-width: 600px) {
@@ -123,7 +140,14 @@
       .all-projects { font-size: 13px; }
       .project-list { padding-left: 18px; }
       .project-list li { padding-left: 3px; margin-bottom: 17px; }
-      .project-meta { font-size: 10px; }
+      .featured-project h3 { font-size: 18px; }
+      .project-award, .project-summary { font-size: 15px; }
+      .project-figure { margin-top: 16px; }
+      .project-figure figcaption { font-size: 13px; }
+      .service-list { padding-left: 18px; }
+      .service-list li { padding-left: 3px; }
+      .service-list strong { font-size: 16px; }
+      .service-detail { font-size: 15px; }
       .site-footer { margin-top: 35px; }
       .footer-inner { font-size: 11px; padding-block: 20px; }
     }
@@ -155,21 +179,23 @@
     <div class="masthead">
       <h1>Runzhuo Du</h1>
       <hr class="masthead-rule" aria-hidden="true">
-      <p>Biomedical Engineering · ShanghaiTech University</p>
+      <p>School of Biomedical Engineering · ShanghaiTech University</p>
     </div>
 
     <section class="profile" aria-labelledby="profile-name">
       <img class="avatar" src="assets/avatar.png" width="460" height="460" alt="Illustrated avatar of an astronaut riding a rocket against a blue sky" fetchpriority="high" decoding="async">
       <div class="profile-details">
         <h2 id="profile-name">Runzhuo Du</h2>
-        <p class="affiliation">Undergraduate Student<br>Biomedical Engineering<br>ShanghaiTech University<br><span class="graduation">Expected graduation: 2028</span></p>
+        <p class="affiliation">Undergraduate Student<br>School of Biomedical Engineering<br>ShanghaiTech University<br><span class="graduation">Expected graduation: 2028</span></p>
+        <p class="profile-advisor">Advisor: Prof. Qian Xuejun</p>
         <p class="profile-contact">Email: <a href="mailto:durzh2024@shanghaitech.edu.cn">durzh2024@shanghaitech.edu.cn</a></p>
         <p class="profile-links"><a href="https://github.com/maaaark-creator">GitHub</a></p>
       </div>
     </section>
 
     <section class="biography" id="about" aria-label="About me">
-      <p>I am an undergraduate student majoring in Biomedical Engineering at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, with an expected graduation year of 2028. My research interests lie in <strong>breast cancer screening</strong> and <strong>medical image analysis</strong>.</p>
+      <p>I am an undergraduate student in the <strong>School of Biomedical Engineering</strong> at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, with an expected graduation year of 2028. I am advised by <strong>Prof. Qian Xuejun</strong>, and my research interests lie in <strong>breast cancer screening</strong> and <strong>medical image analysis</strong>.</p>
+      <p>I am also pursuing a minor in <strong>Artificial Intelligence for Science</strong>, offered by the <strong>School of Information Science and Technology (SIST)</strong>.</p>
       <p>You can find a selection of my public projects below, or visit my <a href="https://github.com/maaaark-creator">GitHub</a> for more.</p>
     </section>
 
@@ -192,19 +218,38 @@
         <h2 class="section-title" id="projects-title">Selected Projects</h2>
         <a class="all-projects" href="https://github.com/maaaark-creator?tab=repositories">All repositories →</a>
       </div>
+      <article class="featured-project" aria-labelledby="segmentation-title">
+        <h3 id="segmentation-title">Intelligent Colorectal Lesion Segmentation with Mixture-of-Experts and Chain-of-Thought Reasoning</h3>
+        <p class="project-award"><strong>First Prize (Top 5%)</strong> · Team Captain · 2026<br>11th National Undergraduate Biomedical Engineering Innovation Design Competition</p>
+        <p class="project-summary">A colorectal lesion segmentation model combining a mixture-of-experts architecture with chain-of-thought reasoning.</p>
+        <figure class="project-figure">
+          <a class="workflow-link" href="assets/colorectal-segmentation-workflow.png" target="_blank" rel="noopener noreferrer" aria-label="View the project workflow at full resolution (opens in a new tab)">
+            <img class="workflow-image" src="assets/colorectal-segmentation-workflow.png" width="1983" height="594" alt="Project workflow: a shared 3D CT patch feeds five parallel experts for primary segmentation, soft boundaries, boundary correction, regional priors, and negative context. Chain-of-thought fusion proceeds through candidate generation, refinement, and review to produce a final lesion mask." loading="lazy" decoding="async">
+          </a>
+          <figcaption>Project workflow: parallel expert evidence is combined through candidate generation, refinement, and review to produce the final lesion mask.<br><a class="figure-fullsize" href="assets/colorectal-segmentation-workflow.png" target="_blank" rel="noopener noreferrer">View full-size diagram ↗</a></figcaption>
+        </figure>
+      </article>
       <ul class="project-list">
         <li>
-          <a class="project-title" href="https://github.com/maaaark-creator/simi_hospital">Simulated Hospital</a><span class="project-meta">Python</span>
+          <a class="project-title" href="https://github.com/maaaark-creator/simi_hospital">Simulated Hospital</a>
           <p class="project-description">A simulated hospital project on surgical consultations.</p>
         </li>
         <li>
-          <a class="project-title" href="https://github.com/maaaark-creator/ai-in-medical-imaging-2026-spring">AI in Medical Imaging</a><span class="project-meta">HTML</span>
+          <a class="project-title" href="https://github.com/maaaark-creator/ai-in-medical-imaging-2026-spring">AI in Medical Imaging</a>
           <p class="project-description">ShanghaiTech BME1312 · Spring 2026.</p>
         </li>
         <li>
-          <a class="project-title" href="https://github.com/maaaark-creator/Calculus">Calculus</a><span class="project-meta">HTML</span>
+          <a class="project-title" href="https://github.com/maaaark-creator/Calculus">Calculus</a>
           <p class="project-description">ShanghaiTech Calculus · Autumn 2026.</p>
         </li>
+      </ul>
+    </section>
+
+    <section class="content-section" id="teaching-service" aria-labelledby="service-title">
+      <h2 class="section-title" id="service-title">Teaching & Service</h2>
+      <ul class="service-list">
+        <li><strong>Teaching Assistant, Calculus</strong><span class="service-detail">ShanghaiTech University</span></li>
+        <li><strong>Vice Chair, Student Development Committee</strong><span class="service-detail">School of Biomedical Engineering · Academic Year 2025–2026</span></li>
       </ul>
     </section>
 
@@ -215,6 +260,7 @@
 
     <section class="content-section" id="contact" aria-labelledby="contact-title">
       <h2 class="section-title" id="contact-title">Contact</h2>
+      <p class="opportunity-note"><strong>I am currently seeking PhD or other graduate study opportunities, both in China and abroad.</strong> I am particularly interested in programs related to breast cancer screening and medical image analysis.</p>
       <p class="plain-paragraph">Feel free to get in touch at <a href="mailto:durzh2024@shanghaitech.edu.cn">durzh2024@shanghaitech.edu.cn</a>.</p>
     </section>
   </main>
